@@ -21,8 +21,36 @@
 }
 #women_img{
     position: absolute;
-    right: 20px;
+    right: 15px;
     bottom: 0;
     z-index: 10;
     object-fit: contain;
+}
+
+#offers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.offers_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    max-width: 20%;
+
+}
+
+.offers_item p{
+    text-align: center;
+    color: #4D4D4D;
+    font-size: 13px;
+}
+.offers_item h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: #4D4D4D;
+
 }

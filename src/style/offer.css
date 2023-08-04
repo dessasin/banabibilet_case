@@ -1,0 +1,28 @@
+#what_we_offer{
+    background-color: #F3F3F3;
+    width: 100vw;
+    height: 320px;
+    position: relative;
+}
+#wwoffer_content{
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#right_dots_img{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 4;
+}
+#women_img{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 10;
+    object-fit: contain;
+}

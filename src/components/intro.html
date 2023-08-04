@@ -1,0 +1,91 @@
+<div id="intro_content" ng-controller="myCtrl">
+
+    <div id="trip_selector">
+        <div id="trip_selector-controls">
+            <span class="trip_selector_toggle ">
+                <img src="/src/img/icon/bus.svg"></img>
+                Otobüs
+            </span>
+            <span class="trip_selector_toggle active">
+                <img src="/src/img/icon/flight.svg"></img>
+                Uçak
+            </span>
+        </div>
+
+        <div id="trip_selector-content">
+                <div id="trip_selector_directions">
+                    <div class="trip_selector-input_group">
+                        <label for="#from_input" >Nereden</label>
+                        <select name="from_input"  id="from_input" >
+                            <option ng-repeat="x in airports" value="{{x.code}}">{{x.name}}</option>
+                        </select>
+                    </div>
+                    <div class="trip_selector-input_group swap_btn">
+                         <img src="/src/img/icon/swap.svg" alt="">
+                    </div>
+                    <div class="trip_selector-input_group">
+                        <label for="#to_input">Nereye</label>
+                        <select name="to_input" id="to_input"></select>
+                    </div>
+                </div>
+
+
+                <div id="trip_selector_time">
+                    <div class="trip_selector-input_group">
+                        <label for="#from_input" >Gidiş Tarihi</label>
+                        <select name="from_input"  id="from_input"></select>
+                    </div>
+
+                    <div class="trip_selector-input_group">
+                        <label for="#to_input">Dönüş Tarihi</label>
+                        <select name="to_input" id="to_input">
+                            <option value="">Tek Yön</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="trip_selector_person">
+                    <div class="trip_selector-input_group">
+                        <label for="#from_input" >Yolcu</label>
+                        <select name="from_input"  id="from_input">
+                            <option value="1">1 Yolcu</option>
+                            <option value="2">2 Yolcu</option>
+                        </select>
+                    </div>
+
+                    <div class="trip_selector-input_group type_selector">
+                        <span class="trip_selector_type_check">
+                            <label class="checkbox-group">
+                                <input type="checkbox" checked>
+                                <span class="custom-checkbox"></span>
+                            <label/>
+                            <label >Tek Yön</label>
+                        </span>
+                        <span class="trip_selector_type_check">
+                            <label class="checkbox-group">
+                                <input type="checkbox" >
+                                <span class="custom-checkbox"></span>
+                            <label/>
+                            <label >Aktarmasız</label>
+                        </span>
+                    </div>
+                </div>
+        </div>
+        <div id="find_ticket_btn">
+             <div id="find_ticket_btn-left">
+                <span>
+                    <span id="find_icon">
+                        <img src="/src/img/icon/search.svg" alt="">
+                    </span>
+                    <strong>Banabibilet</strong>bul
+                </span>
+             </div>
+             <img src="/src/img/icon/double-right.svg" alt="">
+        </div>
+    </div>
+    <div id="intro_content-message">
+        <p><strong>Hayallerini</strong> erteleme!</p>
+        <p>Sen nereye <strong>banabibilet.com</strong> oraya!</p>
+
+    </div>
+</div>

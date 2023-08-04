@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="/src/style/header.css">
     <link rel="stylesheet" href="/src/style/intro.css">
     <link rel="stylesheet" href="/src/style/offer.css">
+    <link rel="stylesheet" href="/src/style/main.css">
+    <link rel="stylesheet" href="/src/style/companies.css">
 </head>
-<body>
+<body ng-controller="myCtrl">
     <!-- HEADER  -->
     <header>
         <div ng-include="'/src/components/header.html'"></div>
@@ -20,10 +22,18 @@
     <!-- INTRO -->
 
     <section id="intro" ng-include="'/src/components/intro.html'"></section>
+    <!-- WHAT WE OFFER  -->
+
+
     <section id="what_we_offer" ng-include="'/src/components/offer.html'"></section>
 
+    <main>
+        <!-- COMPANIES -->
+        <section id="companies" ng-include="'/src/components/companies.html'"></section>
 
-    <!-- COMPANIES -->
+    </main>
+
+
 
     <!-- TRAVEL CAROUSEL  -->
 

@@ -2,7 +2,7 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 
 main, article, aside, figure, footer, header, nav, section, details, summary {display: block;}
 
-html{box-sizing: border-box;}
+html{box-sizing: border-box; background-color: #f5f5f5; }
 
 *, *:before, *:after {box-sizing: inherit;}
 

@@ -1,0 +1,31 @@
+<div id="companies_content">
+    <div id="companies_content_top">
+        <div id="companies_content_titles">
+            <h1>En prestijli firmalar</h1>
+            <h5>bir tık uzağınızda!</h5>
+        </div>
+
+        <span id="look_all_companies">
+            <span>
+                Tüm otobüs firmalarına git
+            </span>
+            <img src="/src/img/icon/arrow_right_circle.svg" alt="">
+        </span>
+    </div>
+
+    <div id="companies_content_bottom">
+
+        <div class="company_card" ng-repeat="comp in companies">
+            <img src="/src/img/icon/arrow_right_circle.svg" alt="" class="company_card-arrow">
+            <img src="{{comp.logo}}" alt="">
+            <div class="company_card_content">
+                <span>Bu Firmadan</span>
+                <a href="#">Bilet Al</a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

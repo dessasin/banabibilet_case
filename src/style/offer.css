@@ -1,7 +1,8 @@
 #what_we_offer{
     background-color: #F3F3F3;
     width: 100vw;
-    height: 320px;
+    padding-top: 40px;
+    /* height: 320px; */
     position: relative;
 }
 #wwoffer_content{
@@ -10,7 +11,7 @@
     height: 100%;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 #right_dots_img{
@@ -25,6 +26,9 @@
     bottom: 0;
     z-index: 10;
     object-fit: contain;
+}
+#offer_bottom_img{
+    background-color: #f5f5f5;
 }
 
 #offers{

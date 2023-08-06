@@ -37,8 +37,56 @@ app.controller("myCtrl", function($scope) {
             name:'Efe Tur',
             logo:'/src/img/companies/efe.png'
         },
-        
+
     ]
 
+    $scope.popular_routes=[
+        {
+            start:'İstanbul',
+            end:'Çanakkale',
+            start_price:'280'
+        },
+        {
+            start:'İstanbul',
+            end:'Ankara',
+            start_price:'350'
+        },
+        {
+            start:'İstanbul',
+            end:'İzmir',
+            start_price:'170'
+        },
+        {
+            start:'İstanbul',
+            end:'Çanakkale',
+            start_price:'280'
+        },
+        {
+            start:'İstanbul',
+            end:'Ankara',
+            start_price:'350'
+        },
+        {
+            start:'İstanbul',
+            end:'İzmir',
+            start_price:'170'
+        },
+        {
+            start:'İstanbul',
+            end:'Çanakkale',
+            start_price:'280'
+        },
+        {
+            start:'İstanbul',
+            end:'Ankara',
+            start_price:'350'
+        },
+        {
+            start:'İstanbul',
+            end:'İzmir',
+            start_price:'170'
+        },
+    ]
 
+    $scope.popular_cities=['İstanbul','Ankara','İzmir','Antalya','Erzurum','Adana','Diyarbakır','Mersin','Malatya']
 });

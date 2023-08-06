@@ -1,0 +1,26 @@
+<div id="popular_routes_content">
+    <div id="popular_bus_routes">
+        <h2>Popüler Otobüs Seferleri</h2>
+        <div id="bus_routes_grid">
+            <div class="route_card" ng-repeat="route in popular_routes">
+                <span class="route_card_title">
+                    {{route.start}} - {{route.end}}
+                </span>
+                <span class="route_card_content">
+                    <span>Otobüs Bileti &nbsp;&nbsp; <span class="bold_blue"> {{route.start_price}} &#8378;</span> ‘den başlayan fiyatlarla</span>
+                    <img src="/src/img/icon/back.svg" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="popular_cities">
+        <h2>Sefer Yapılan Popüler Şehirler</h2>
+        <div id="popular_cities_grid">
+            <span class="city_card" ng-repeat="city in popular_cities">{{city}}</span>
+        </div>
+
+    </div>
+</div>

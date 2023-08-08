@@ -1,0 +1,49 @@
+<div id="carousel_wrapper">
+        <div id="carousel_title_wrapper">
+            <span class="carousel_control_btn glider-prev">
+            </span>
+            <div id="carousel_titles">
+                <span>Fırsatları Keşfedin</span>
+                <h2>Popüler seyahatler</h2>
+            </div>
+            <span class="carousel_control_btn glider-next">
+            </span>
+        </div>
+
+
+        <div id="carousel"  class="my_carousel">
+            <div class="carousel_card item" ng-repeat="travel in travels">
+                <div class="carousel_card_top" style="background-image: url('{{travel.cover}}');"></div>
+                <div class="carousel_card_bottom">
+                    <span class="carousel_card_desc">
+                        {{travel.desc}}
+                    </span>
+                    <div class="carousel_card_details">
+                        <span class="carousel_card_detail_item">
+                            <img src="/src/img/icon/nav.svg" alt="">
+                            <span>{{travel.type}}</span>
+                        </span>
+                        <span class="carousel_card_detail_item">
+                            <img src="/src/img/icon/clock_dark.svg" alt="">
+                            <span>{{travel.duration}}</span>
+                        </span>
+                        <span class="carousel_card_price">
+                            <span class="carousel_card_price_detail">
+                                <img src="/src/img/icon/wave.svg" alt="">
+                                <span>{{travel.extras}}</span>
+                            </span>
+                            <span><strong>{{travel.price}} TL</strong></span>
+                        </span>
+
+                    </div>
+
+                </div>
+                <span class="carousel_card_review_btn">
+                    Paketi İncele
+                </span>
+            </div>
+
+        </div>
+
+
+</div>

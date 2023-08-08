@@ -1,6 +1,166 @@
 #travel_carousel{
-    margin-top: 120px;
+    margin: 140px 0;
     width: 100%;
-    height: 500px;
-    background-color: tomato;
+
+    position: relative;
+
+}
+
+#carousel_wrapper{
+    display: flex;
+    align-items: center;
+   gap: 49px;
+   flex-direction: column;
+
+}
+
+#carousel_title_wrapper{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    gap: 92px;
+    width: 100%;
+}
+
+#carousel_titles{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+}
+
+#carousel_titles span{
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#carousel_titles h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: auto;
+
+}
+
+.carousel_control_btn{
+    align-self: flex-end;
+    width: 36px;
+    height: 36px;
+    background-image: url('/src/img/icon/grey_arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.carousel_control_btn:last-child{
+    transform: rotate(180deg);
+
+}
+.carousel_control_btn:last-child:hover{
+    transform: rotate(0deg);
+
+}
+
+.carousel_control_btn:hover{
+    background-image: url('/src/img/icon/blue_arrow.png');
+    transform: rotate(180deg);
+
+}
+
+
+#carousel{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 500px;
+}
+.carousel_card{
+    position: relative;
+    width: 282px;
+    height: 464px;
+    background-color: #fff;
+    border-radius: 14px;
+    filter: drop-shadow(0px 4px 24px rgba(0,0,0,0.1));
+
+}
+
+
+.carousel_card_top{
+    height: 60%;
+    width: 100%;
+    background-position: top;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.carousel_card_bottom{
+    padding: 16px 14px;
+}
+.carousel_card_desc{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #0e479c;
+
+}
+
+.carousel_card_details{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 15px;
+}
+
+.carousel_card_detail_item{
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+
+}
+
+.carousel_card_price{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carousel_card_price span strong{
+    font-size: 14px;
+    font-weight: 700;
+    color: #0e479c;
+
+}
+
+.carousel_card_price_detail{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.carousel_card_review_btn{
+    position: absolute;
+    width: 180px;
+    height: 47px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 47px;
+    bottom: -20px;
+    left: 20%;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 18px rgba(0,0,0,0.1));
+    background-color: #333;
+    transition: all 140ms ease-in-out;
+}
+
+.carousel_card_review_btn:hover{
+    background-color: #0e479c;
+    bottom: -15px;
 }

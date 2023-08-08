@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banabibilet | Türkiye'nin Her Yerine Seyahat Hizmeti</title>
-    <script src="/src/lib/angular.js"></script>
+    <script type="application/javascript" src="/src/lib/angular.js"></script>
+    <script type="application/javascript" src="/src/lib/jquery.js"></script>
+   
     <link rel="stylesheet" href="/src/style/reset.css">
     <link rel="stylesheet" href="/src/style/font.css">
     <link rel="stylesheet" href="/src/style/header.css">
@@ -15,7 +18,10 @@
     <link rel="stylesheet" href="/src/style/carousel.css">
     <link rel="stylesheet" href="/src/style/app_reveal.css">
     <link rel="stylesheet" href="/src/style/popular_routes.css">
+    <link rel="stylesheet" href="/src/style/about.css">
+    <link rel="stylesheet" href="/src/style/footer.css">
 </head>
+
 <body ng-controller="myCtrl">
     <!-- HEADER  -->
     <header>
@@ -37,28 +43,33 @@
 
 
 
-    <!-- TRAVEL CAROUSEL  -->
+        <!-- TRAVEL CAROUSEL  -->
 
-    <!-- <section id="travel_carousel"></section> -->
+        <section id="travel_carousel" ng-include="'/src/components/carousel.html'"></section>
 
-    <!-- MOBILE APP  -->
+        <!-- MOBILE APP  -->
 
-    <section id="app_reveal" ng-include="'/src/components/app_reveal.html'"></section>
+        <section id="app_reveal" ng-include="'/src/components/app_reveal.html'"></section>
 
-    <!-- POPULAR ROUTES -->
-    <section id="popular_routes" ng-include="'/src/components/popular_routes.html'"></section>
+        <!-- POPULAR ROUTES -->
+        <section id="popular_routes" ng-include="'/src/components/popular_routes.html'"></section>
 
-    <!-- ABOUT -->
+        <!-- ABOUT -->
+
+        <section id="about" ng-include="'/src/components/about.html'"></section>
 
 
 
     </main>
 
 
-
-
-
     <!-- FOOTER -->
+    <footer ng-include="'/src/components/footer.html'"></footer>
+
+
+
     <script src="/src/js/main.js" type="module"></script>
+
 </body>
+
 </html>
